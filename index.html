@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Order your favorite Pizza!</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#pizza"> 1. Pizza</a></li>
+                <li><a href="#size"> 2. Size</a></li>
+                <li><a href="#side"> 3. Side Dishes</a></li>
+                <li><a href="#total"> 4. Order summary</a></li>
+            </ul>
+        </nav>
+
+
+        <section id="pizza">
+
+            <h1>What Pizza do you fancy today?</h1>
+            <p>Select one of our delicious pizzas!
+            </p>
+
+
+
+            <div class="size-selection">
+                <input type="checkbox" id="selection1" class="pizzaSelect" value="1200" />
+                <label for="selection1" class="size-label">Shrimp Pizza<img src="images/shrimp.jpg" /></label>
+
+                <input type="checkbox" id="selection2" class="pizzaSelect" value="3300" />
+                <label for="selection2" class="size-label">Shrimp Pizza<img src="images/baconBBQ.jpg" /></label>
+
+                <input type="checkbox" id="selection3" class="pizzaSelect" value="2200" />
+                <label for="selection3" class="size-label">Shrimp Pizza<img src="images/cheese.jpg" /></label>
+
+                <input type="checkbox" id="selection4" class="pizzaSelect" value="1100" />
+                <label for="selection4" class="size-label">Shrimp Pizza<img src="images/veggy.jpg" /></label>
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+        <section id="size">
+            <h1>Select the size of your pizza!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint voluptates eveniet neque ut totam?
+            </p>
+
+            <div class="size-selection">
+                <input type="checkbox" id="size1" class="pizzaSize" value="200" />
+                <label for="size1" class="size-label"><img src="images/extraLarge.png" /></label>
+
+                <input type="checkbox" id="size2" class="pizzaSize" value="200" />
+                <label for="size2" class="size-label"><img src="images/large.png" /></label>
+
+                <input type="checkbox" id="size3" class="pizzaSize" value="200" />
+                <label for="size3" class="size-label"><img src="images/medium.png" /></label>
+
+                <input type="checkbox" id="size4" class="pizzaSize" value="200" />
+                <label for="size4" class="size-label"><img src="images/small.png" /></label>
+
+            </div>
+
+        </section>
+
+
+        <section id="side">
+            <h1>Any side dishes would you like?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint voluptates eveniet neque ut totam?
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Extra sides </legend>
+                    <label><input type="checkbox" name="pickle" class="checkbx" value="1"
+                            onclick="onlyOne(this)">Pickle(1€)</label>
+                    <label><input type="checkbox" name="chilly" class="checkbx" value="0.5"
+                            onclick="onlyOne(this)">Chilly Sauce(0.5 €)</label>
+                    <label><input type="checkbox" name="deeping" class="checkbx" value="0.5"
+                            onclick="onlyOne(this)">Dipping Sauce(0.5
+                        €)</label>
+                    <label><input type="checkbox" name="stick" class="checkbx" value="5" onclick="onlyOne(this)">Cheese
+                        Sticks(four sticks, 5
+                        €)</label>
+                    <label><input type="checkbox" name="salad" class="checkbx" value="2.5"
+                            onclick="onlyOne(this)">Coneslaw(2.5 €)</label>
+                </fieldset>
+            </form>
+
+
+        </section>
+
+
+        <section id="summary">
+            <h1>This is the summary of your total order</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint voluptates eveniet neque ut totam?
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Total</legend>
+                    <input type="text" id="total" name="total" class="price" readonly>
+                </fieldset>
+            </form>
+
+        </section>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
